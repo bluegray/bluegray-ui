@@ -37,10 +37,13 @@
     background-color: @tab-background-color;
     box-shadow: inherit;
     border-left: @tab-border;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
     &.active {
       color: @tab-text-color-active;
       background-color: @tab-background-color-active;
       box-shadow: none;
+      border-top: 3px solid @accent-color;
+      border-radius: 3px;
     }
     &:first-of-type {
       border-left: 1px solid transparent;
@@ -229,8 +232,8 @@ atom-pane.active .tab.active:before {
   z-index: 2;
   top: 0;
   left: -1px; // cover left border
-  width: 100%;
-  height: 3px;
+  width: 2px;
+  bottom: 0;
   background: @accent-color;
 }
 
