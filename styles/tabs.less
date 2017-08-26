@@ -223,20 +223,6 @@ atom-dock.left {
   }
 }
 
-// Active pane marker --------------
-
-atom-pane.active .tab.active:before {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  z-index: 2;
-  top: 0;
-  left: -1px; // cover left border
-  width: 2px;
-  bottom: 0;
-  background: @accent-color;
-}
-
 // hide marker in docks
 atom-dock .tab-bar .tab::before {
   display: none;
